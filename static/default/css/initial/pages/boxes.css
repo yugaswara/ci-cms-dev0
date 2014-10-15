@@ -1,0 +1,140 @@
+.boxdomainavailable, .boxdomainexist, .boxdomainwaiting{
+	padding:0px;
+	float:left;
+	width:225px;
+	overflow: hidden;
+	margin:6px;
+	z-index:100;
+}
+.boxCell {
+	padding: 10px 10px 16px 10px;
+	text-align: center;
+	color: #323232;
+}
+.boxCell a{
+	color: #fff;
+}
+.boxCell a:hover{
+	color: #d53128;
+}
+.boxCell h1{
+	font-size: 1.6em;
+	font-family: arial;
+	margin: 0px;
+	padding: 0px;
+}
+.boxCell h3{
+	font-size: 1.6em;
+	font-family: arial;
+	margin: 0px 0px 35px 0px;
+	padding: 0px;
+}
+.boxCell h4{
+	font-size: 1.0em;
+	font-family: arial;
+	margin: 0px;
+	padding: 0px;
+}
+
+.boxdomainavailable .boxCell{
+	background: url(../../../../whois/redBg.gif) top no-repeat;
+}
+.boxdomainexist .boxCell{
+	background: url(../../../../whois/greenBg.gif) top no-repeat;
+}
+.boxdomainwaiting .boxCell{
+	background: url(../../../../whois/blueBg.gif) top no-repeat;
+}
+.boxdomainavailable .boxCell h1, .boxdomainavailable .boxCell h3{
+	color: #612340;
+}
+.boxdomainexist .boxCell h1, .boxdomainexist .boxCell h3{
+	color: #444d33;
+}
+.boxdomainwaiting .boxCell h1, .boxdomainwaiting .boxCell h3{
+	color: #324350;
+}
+.boxdomainavailable .boxCell h4{
+	color: #b12e6c;
+}
+.boxdomainexist .boxCell h4{
+	color: #66862c;
+}
+.boxdomainwaiting .boxCell h4{
+	color: #1e6092;
+}
+
+
+.boxTop {
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+.boxBot {
+	height: 64px;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.boxdomainavailable .boxTop {
+	background: url(../../../../whois/redTop.gif) no-repeat;
+}
+.boxdomainavailable .boxBot {
+	background: url(../../../../whois/redBot.gif) no-repeat;
+}
+.boxdomainexist .boxTop {
+	background: url(../../../../whois/greenTop.gif) no-repeat;
+}
+.boxdomainexist .boxBot {
+	background: url(../../../../whois/greenBot.gif) no-repeat;
+}
+.boxdomainwaiting .boxTop {
+	background: url(../../../../whois/blueTop.gif) no-repeat;
+}
+.boxdomainwaiting .boxBot {
+	background: url(../../../../whois/blueBot.gif) no-repeat;
+}
+.searchResult {
+	width: 930px;
+	margin: 0px auto;
+}
+.checkDom {
+	padding: 10px;
+	text-align: center;
+	font-size: 1.2em;
+	background: url(../../../../botCorner.gif) bottom no-repeat;
+	margin-bottom: 10px;
+}
+.checkDom label{
+	font-size: 1.2em;
+	margin-right: 10px;
+	margin-left: 2px;
+}
+.checkDomTop {
+	padding: 5px;
+	text-align: center;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+.checkDomMore {
+	padding: 5px;
+	height:150px;
+	margin-bottom: 5px;
+	overflow: auto;
+	text-align: center;
+	font-size: 1.2em;
+	display: none;
+}
+.checkDomTop label, .checkDomMore label{
+	font-size: 1.2em;
+	margin-right: 10px;
+	margin-left: 2px;
+}
+#subcontentDomExt {
+	position: absolute;
+	display: none;
+	width: 290px;
+	z-index: 400;
+}

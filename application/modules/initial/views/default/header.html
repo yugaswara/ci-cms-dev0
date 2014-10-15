@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>{$PAGETITLE}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-language" content="id" />
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <meta name="robots" content="noodp,noydir" />
+		<meta name="description" content="{$metadesc}" />
+		<meta name="keywords" content="{$metakey}" />
+        {section name=icss loop=$CSS}
+        <link href="{$CSS[icss]}" type="text/css" rel="stylesheet" media="screen" />
+        {/section}
+        {section name=ijs loop=$JS}
+        <script src="{$JS[ijs]}" type="text/javascript"></script>
+        {/section}
+        <script language="javascript" type="text/javascript">
+        // <![CDATA[
+        {section name=ijs loop=$InlineJS}
+        {$InlineJS[ijs]}
+        {/section}
+        // ]]>
+        </script>
+    </head>
+    <body>
+    <!-- {$CSS_PATH} -->
+        <div id="mainstructure">
+            <div class="bannercontainer"><img src="{$IMG_PATH}/head_{$curr_lang}.jpg"></div>
+            <div id="contentstructure">
+                <div class="headercontainer">

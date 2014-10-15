@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>{$PAGETITLE}</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-language" content="id" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<meta name="robots" content="noodp,noydir" />
+		{section name=icss loop=$CSS}
+		<link href="{$CSS[icss]}" type="text/css" rel="stylesheet" media="screen" />
+		{/section}
+		{section name=ijs loop=$JS}
+		<script src="{$JS[ijs]}" type="text/javascript"></script>
+		{/section}
+		<script language="javascript" type="text/javascript">
+		// <![CDATA[
+		{section name=ijs loop=$InlineJS}
+		{$InlineJS[ijs]}
+		{/section}
+		// ]]>
+		</script>
+
+	</head>
+	<body>
+<div class="MainStructure">
+    <div class="TopContainer">
+		<div class="LoggoField"><img src="{$IMG_PATH}loggo2.png"></div>
+        {if $header_menu!='disabled'}
+		<div class="MenuField">
+			<div class="{$home_menu}"><a href="{$BASE_PATH}admin/">Home</a></div>
+			<div class="{$article_menu}"><a href="{$BASE_PATH}admin/article">Article</a></div>
+			<div class="{$download_center_menu}"><a href="{$BASE_PATH}admin/download_center/index/0">Download Center</a></div>
+			<div class="{$news_menu}"><a href="{$BASE_PATH}admin/news/index/0">News</a></div>
+			<div class="{$events_menu}"><a href="{$BASE_PATH}admin/events/index/0">Events</a></div>
+			<div class="{$links_menu}"><a href="{$BASE_PATH}admin/links/index/0">Links</a></div>
+			<div class="{$database_alumni_menu}"><a href="{$BASE_PATH}admin/database_alumni/index/0">Database Alumni</a></div>
+        <!--
+		<div class="LanguageField right">
+			<div class="Flag left"><a href="#"><img src="{$admin_files}images/flag01.gif"></a></div>
+			<div class="Flag left"><a href="#"><img src="{$admin_files}images/flag02.gif"></a></div>
+		</div>
+		-->
+		</div>
+        {/if}
+	</div>

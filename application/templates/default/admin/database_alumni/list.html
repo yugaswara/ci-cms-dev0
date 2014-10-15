@@ -1,0 +1,72 @@
+{include file="$MAIN_TPL_HEADER"}
+<div class="MiddleContainer">
+		<div class="ContentFieldList left">
+			<div class="BlueLine">
+				<div class="TextBar">Article</div>
+				<a class="menu5" href="{$ADMIN_PATH}database_alumni/adding/index/{$page_num}"><div class="BlueButton right">Add</div></a>		
+			</div>
+			<table width="99%">
+				<tr>
+					<td>Checklist</td>
+					<td>Page Title</td>
+					<td>View</td>
+					<td>Edit</td>
+					<td>Delete</td>
+				</tr>
+				{foreach item=item from=$list}
+				<tr>
+					<td width="60"><input type="checkbox" class="check" name="ar_{$item.unique_id}" value="{$item.unique_id}"></td>
+					<td><span class="BoldTxt">{$item.name}</span></td>
+					<td width="30"><a href="{$ADMIN_PATH}database_alumni/viewing/{$item.unique_id}/{$page_num}"><img src="{$IMG_PATH}view.gif"></a></td>
+					<td width="30"><a href="{$ADMIN_PATH}database_alumni/editing/{$item.unique_id}/{$page_num}"><img src="{$IMG_PATH}edit.gif"></td>
+					<td width="30"><a href="javascript:void();" onClick="javascript:delete_confirm('{$ADMIN_PATH}database_alumni/deleting/{$item.unique_id}/{$page_num}')"><img src="{$IMG_PATH}delete.gif"></td>
+				</tr>
+				{/foreach}
+			</table>
+			<div class="BlueLineBtm">
+				<div class="BlueButton left"><a class="menu5" href="javascript:checkbox_select_all();">Select All</a></div>
+				<div class="BlueButton left"><a class="menu5" href="javascript:checkbox_deselect_all();">Deselect All</a></div>
+				<form method="post" action="{$ADMIN_PATH}database_alumni/multi_deleting" onsubmit="return delete_all_check()">
+					<input type="hidden" id="collectIds" name="collectIds">
+					<input type="hidden" name="category" value="{$category}">
+					<input type="hidden" id="page_num" name="page_num" value="{$page_num}">
+					<input type="submit" value="Delete Selection" class="BlueButtonR">
+					{$navigator}
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+{include file="$MAIN_TPL_FOOTER"}
+<!--
+			<div class="WhiteLine">
+				<div class="Column1">
+					&nbsp;
+				</div>
+				<div class="Column2">
+					Content
+				</div>
+				<div class="Column3">
+					<div class="IconMenu">Delete</div>
+					<div class="IconMenu">Active</div>
+					<div class="IconMenu">Edit</div>
+					<div class="IconMenu">View</div>
+				</div>
+			</div>
+            {foreach item=item from=$list}
+			<div class="WhiteLine">
+				<div class="Column1">
+					<input type="checkbox">
+				</div>
+				<div class="Column2">
+					<span class="BoldTxt">{$item.id_page_title}</span> - <span class="Italic">{$item.en_page_title}</span>
+				</div>
+				<div class="Column3">
+					<div class="IconMenu"><input type="checkbox"></div>
+					<div class="IconMenu"><a href="{$ADMIN_PATH}article/editing/{$item.article_id}"><img src="{$IMG_PATH}edit.gif"></a></div>
+					<div class="IconMenu"><a href="{$ADMIN_PATH}article/viewing/{$item.article_id}"><img src="{$IMG_PATH}view.gif"></a></div>
+					<div class="IconMenu"><a href="{$ADMIN_PATH}article/viewing/{$item.article_id}"><img src="{$IMG_PATH}delete.gif"></a></div>
+				</div>
+			</div>
+			{/foreach}
+--!>

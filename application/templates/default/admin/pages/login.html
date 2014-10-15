@@ -1,0 +1,36 @@
+{include file="$MAIN_TPL_HEADER"}
+<div class="middle_field">
+	<div class="main_field left">
+	<form name="form_login" method="post" action="{$BASE_PATH}admin/initial/login">
+	<div class="field">
+		<div class="main_form">
+			<div class="label left text1">User Name :&nbsp;</div>
+			<div class="input left"><input id="username" type="text" name="un" value="" /></div>
+		</div>
+		<div class="main_form">
+			<div class="label left text1">Password :&nbsp;</div>
+			<div class="input left"><input id="password" type="password" name="ps" value="" /></div>
+		</div>
+        {if $warning}
+		<div class="main_form">
+                <div class="label left text1"></div>
+                <div class="input left">Wrong username and/or password!</div>
+		</div>
+        {/if}
+		<!--
+		<div class="main_form">
+			<div class="label left text1"></div>
+			<div class="input left"><a href="#">Forgot Your Password</a></div>
+		</div>
+		-->
+		<div class="main_form">
+			<div class="label left text1"></div>
+			<div class="input left"><input type="submit" class="btlogin left" name="login" value="login"></div>
+		</div>
+	</div>
+	
+	</form>
+	</div>
+	<div class="image_field right"></div>
+</div>
+{include file="$MAIN_TPL_FOOTER"}

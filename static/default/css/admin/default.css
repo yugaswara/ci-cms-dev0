@@ -1,0 +1,7 @@
+html,body{margin:0;padding:0;height:100%;list-style:none;}
+body,table{color:#000000;font:normal 8pt tahoma,san-serif;}
+h1,h2,p,img,form,table{margin:0;}
+h1,h2{font:bold 24pt "Trebuchet MS",sans-serif;}
+img{border:0;}
+a,a:hover{text-decoration:none;color:#000000;}
+label.error {color:red;font-style:italic;}

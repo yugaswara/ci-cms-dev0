@@ -1,0 +1,245 @@
+/* === CSS RESET === */
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+}
+
+body {line-height:1;font-size:1em;}
+
+ol,ul {list-style:none;}
+blockquote,q {quotes:"" "";}
+blockquote:before,blockquote:after,q:before,q:after {content:"";}
+:focus,a:focus {outline:0;}
+ins {text-decoration:none;}
+del {text-decoration:line-through;}
+table {border-collapse:collapse;border-spacing:0;}
+textarea {overflow:auto;}
+button {cursor:pointer;}
+a {text-decoration:none;color:#3d72a8;}
+a:hover {text-decoration:underline;}
+
+/* === A better and smarter way to clear floats === */
+.clearfix:after {
+  content:" ";
+  display:block;
+  height:0;
+  font-size:0;
+  clear:both;
+  visibility:hidden;
+}
+.clearfix {display:inline-block;}
+/* Hide from IE Mac \*/
+.clearfix {display:block;}
+/* End hide from IE Mac */
+* html .clearfix {height:1px;}
+
+/* === GLOBAL === */
+html,body {height:100%;}
+body {
+  font:normal 10pt arial,sans-serif;
+  background:url(../images/bg_F60.gif) left top repeat-x #ffffff;
+}
+.main_structure{
+ width:1000px;
+ height:auto !important;
+ min-height:700px;
+ height:700px;
+ margin: 0 auto;
+}
+.head_container{
+ width:100%;
+ height:217px;
+}
+  .headbanner_field{
+   width:100%;
+   height:153px;
+  }
+    .banner_logo{
+     width:270px;
+     height:112px;
+     padding-top:20px;
+     margin-left:90px;
+     float:left;
+    }
+  .headmenu_field{
+   width:100%;
+   height:64px;
+  }
+    .headmenu_left{
+     width:30px;
+     height:64px;
+     background:url(../images/efx_shadow1.png) left top no-repeat;
+     float:left;
+    }
+    .headmenu_center{
+     width:940px;
+     height:64px;
+     float:left;
+    }
+      .hmc_left{
+       width:40px;
+       height:64px;
+       background:url(../images/top_coner.gif) left top no-repeat;
+       float:left;
+      }
+      .hmc_center{
+       width:860px;
+       height:64px;
+       background:url(../images/topmenu_bg.gif) left top repeat-x;
+       float:left;
+      }
+        .hmcc_menu{
+         width:90%;
+         height:64px;
+         float:left;
+        }
+          .hmcc_submenu{
+           width:100%;
+           height:16px;
+           margin-top:40px;
+          }
+        .language{
+         margin-top:38px;
+         float:right;
+        }
+      .hmc_right{
+       width:40px;
+       height:64px;
+       background:url(../images/top_coner.gif) right top no-repeat;
+       float:left;
+      }
+    .headmenu_right{
+     width:30px;
+     height:64px;
+     background:url(../images/efx_shadow1.png) right top no-repeat;
+     float:left;
+    }
+    
+.content_container{
+ width:100%;
+ height:auto !important;
+ min-height:500px;
+ height:500px;
+ background:#ffffff;
+}
+  .left_container{
+   width:30px;
+   height:200px;
+   background:url(../images/efx_shadow2.png) left top no-repeat;
+   float:left;
+  }
+  .center_container{
+   width:940px;
+   height:auto !important;
+   min-height:500px;
+   height:500px;
+   background:url(../images/content_bg.gif) center top repeat-y;
+   float:left;
+   padding-top:10px;
+  }
+    .left_content_field{
+     width:221px;
+     height:auto! important;
+     min-height:100px;
+     height:100px;
+     float:left;
+    }
+      .arrowlistmenu{
+       margin:0 auto;
+      }
+      .sponsored{
+       text-align:center;
+       margin-top:50px;
+      }
+        .logo_sponsored{
+         margin-bottom:25px;
+        }
+    .center_content_field{
+     width:499px;
+     height:auto! important;
+     min-height:100px;
+     height:100px;
+     float:left;
+    }
+      .image_field,.text_field{
+       width:471px;
+       height:268px;
+       margin:0 auto;
+      }
+    .right_content_field{
+     width:210px;
+     float:left;
+     padding-left:10px;
+    }
+      .search_field{
+       width:210px;
+       height:73px;
+       background:url(../images/searchThesis_bg.gif) left top repeat-x;
+       margin-bottom:16px;
+       padding-top:8px
+      }
+      *html .search_field{
+       height:81px;
+      }
+      .news_event{
+       width:210px;
+       background:url(../images/blue_coner.gif) right top no-repeat;
+       padding-top:2px;
+       margin-bottom:16px;
+       position:relative;
+      }
+   .right_container{
+   width:30px;
+   height:200px;
+   background:url(../images/efx_shadow2.png) right top no-repeat;
+   float:left;
+  }
+  
+.foot_container{
+ width:100%;
+ height:120px;
+}
+  .fc_left{
+   width:30px;
+   height:100px;
+   background:url(../images/efx_shadow3.png) left bottom no-repeat;
+   float:left;
+  }
+  .fc_center{
+   width:940px;
+   height:110px;
+   float:left;
+   margin-top:-1px;
+  }
+    .fcenter_top{
+     width:100%;
+     height:70px;
+     background:url(../images/content_bg.gif) center top repeat-y;
+    }
+    .fcenter_btm{
+     width:100%;
+     height:45px;
+     background:url(../images/footer_bg.gif) left center repeat-x;
+     text-align:center;
+    }
+  .fc_right{
+   width:30px;
+   height:100px;
+   background:url(../images/efx_shadow3.png) right bottom no-repeat;
+   float:left;
+  }
+
+
+

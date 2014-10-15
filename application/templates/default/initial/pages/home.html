@@ -1,0 +1,142 @@
+{include file="$MAIN_TPL_HEADER"}
+    <!-- START Site Wrapper -->
+    <div class="main_structure">
+
+      <!-- START Header Section -->
+      <div class="head_container clearfix">
+				<img src="{$IMG_PATH}head_img_left.gif" alt="" class="head_img_left" />
+				<div class="head_content">
+					<img src="{$IMG_PATH}head_img_logo.gif" alt="" class="head_img_logo" />
+						<!--Start Top Menu-->
+						<div class="hmcc_menu">
+							<ul class="main_menu">
+								<li {if $top_menu == 'home'}class="active_menu"{/if}>{if $top_menu != 'home'}<a class="left" href="{$BASE_PATH}">{$translation.home.$lang}</a>{else}{$translation.home.$lang}{/if}</li>
+								<li {if $top_menu == 'news'}class="active_menu"{/if}>{if $top_menu != 'news'}<a href="{$BASE_PATH}all_news_event/news">{$translation.news.$lang}</a>{else}{$translation.news.$lang}{/if}</li>
+								<li {if $top_menu == 'events'}class="active_menu"{/if}>{if $top_menu != 'events'}<a href="{$BASE_PATH}all_news_event/events">{$translation.event.$lang}</a>{else}{$translation.event.$lang}{/if}</li>
+								<li {if $top_menu == 'contact_us'}class="active_menu"{/if}>{if $top_menu != 'contact_us'}<a href="{$BASE_PATH}articles/contact_us">{$translation.contact_us.$lang}</a>{else}{$translation.contact_us.$lang}{/if}</li>
+								<li {if $top_menu == 'links'}class="active_menu"{/if}>{if $top_menu != 'links'}<a href="{$BASE_PATH}links/">{$translation.links.$lang}</a>{else}{$translation.links.$lang}{/if}</li>
+								<li {if $top_menu == 'faq'}class="active_menu"{/if}>{if $top_menu != 'faq'}<a class="right" href="{$BASE_PATH}articles/faq/99">{$translation.faq.$lang}</a>{else}{$translation.faq.$lang}{/if}</li>
+							</ul>
+			<!--
+							<div class="hmcc_submenu">
+								<a class="arrow" href="#">Awardees Coner</a>
+								<a class="arrow" href="#">Alumni Coner</a>
+							</div>
+			-->
+						</div>
+						<!--End Top Menu-->
+				</div>
+				<img src="{$IMG_PATH}head_img_right.gif" alt="" class="head_img_right" />
+        <img src="{$IMG_PATH}head_img_banner.gif" alt="" border="0" class="map" usemap="#Map" />
+					<map name="Map" id="Map">
+						<area shape="poly" coords="51,29" href="#" alt="" />
+						<area shape="poly" coords="128,202,133,159,176,154,51,27,1,78,125,201,127,201" href="http://www.studyin.nl" alt="" />
+						<area shape="rect" coords="317,192,337,206" href="{$BASE_PATH}/sl/id/" alt="" />
+						<area shape="rect" coords="347,192,367,206" href="{$BASE_PATH}/sl/en/" alt="" />
+					</map>
+      </div>
+      <!--END Header Section-->
+      
+
+      
+      <!-- START Content Section -->
+      <div class="content_container clearfix">
+        <div class="left_container"></div>
+        
+        <div class="center_container clearfix">
+          <!--Start Left Content-->
+          <div class="left_content_field">
+            
+            <!--Start Acc Menu-->
+			<div id="accordion" class="arrowlistmenu">
+              <h3 class="menuheader"><a href="javascript:void(0);" class={if $active_menu == '0'}"CM01_active"{else}"CM01"{/if}>{$translation.about_stuned.$lang}</a></h3>
+					<ul>
+						<li><a class={if $top_menu == 'history'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}articles/history/0">{$translation.history.$lang}</a></li>
+						<li><a class={if $top_menu == 'general_information'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}articles/general_information/0">{$translation.general_information.$lang}</a></li>
+					</ul>
+              <h3 class="menuheader"><a href="javascript:void(0);" class={if $active_menu == '1'}"CM01_active"{else}"CM01"{/if}>{$translation.testimonials.$lang}</a></h3>
+					<ul>
+						<li><a class={if $top_menu == 'regular_programme'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}articles/alumni_voice/1">{$translation.alumni_voice.$lang}</a></li>
+						<li><a class={if $top_menu == 'pre_registration'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}articles/english_course/1">{$translation.english_course.$lang}</a></li>
+						<li><a class={if $top_menu == 'english_test_information'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}articles/employee/1">{$translation.employee.$lang}</a></li>
+					</ul>
+              <h3 class="menuheader"><a href="javascript:void(0);" class={if $active_menu == '2'}"CM01_active"{else}"CM01"{/if}>{$translation.individual_application.$lang}</a></h3>
+					<ul>
+						<li><a class={if $top_menu == 'regular_programme'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}articles/regular_programme/2">{$translation.regular_programme.$lang}</a></li>
+						<li><a class={if $top_menu == 'pre_registration'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}articles/pre_registration/2">{$translation.pre_registration.$lang}</a></li>
+						<li><a class={if $top_menu == 'english_test_information'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}articles/english_test_information/2">{$translation.english_test_information.$lang}</a></li>
+					</ul>
+				<h2 class="menuheader"><a href="{$BASE_PATH}articles/group_application/" class={if $top_menu == 'group_application'}"CM01_active"{else}"CM01"{/if}>{$translation.group_application.$lang}</a></h2>
+				<h2 class="menuheader"><a href="{$BASE_PATH}articles/awardees_corner/" class={if $top_menu == 'awardees_corner'}"CM01_active"{else}"CM01"{/if}>{$translation.awardees_corner.$lang}</a></h2>
+				<h3 class="menuheader"><a href="javascript:void(0);" class={if $active_menu == '3'}"CM01_active"{else}"CM01"{/if}>{$translation.alumni_corner.$lang}</a></h3>
+					<ul>
+						<li><a class={if $top_menu == 'alumni_databases'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}login/alumni_databases/3">{$translation.alumni_database.$lang}</a></li>
+						<li><a class={if $top_menu == 'alumni_forum'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}login/alumni_forum/3">{$translation.discussion_forum.$lang}</a></li>
+						<li><a class={if $top_menu == 'stuned_celebration'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}articles/stuned_celebration/3">{$translation.stuned_celebration.$lang}</a></li>
+						<li><a class={if $top_menu == 'alumni_thesis_databases'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}login/alumni_thesis_databases/3">{$translation.searchable_thesis_database.$lang}</a></li>
+					</ul>
+				<h3 class="menuheader"><a href="javascript:void(0);" class={if $active_menu == '4'}"CM01_active"{else}"CM01"{/if}>{$translation.download_center.$lang}</a></h3>
+					<ul>
+						<li><a class={if $top_menu == 'individual_application'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}download/individual_application/4">{$translation.individual_application.$lang}</a></li>
+						<li><a class={if $top_menu == 'group_application_dw'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}download/group_application/4">{$translation.group_application.$lang}</a></li>
+						<li><a class={if $top_menu == 'general'}"CM02_active"{else}"CM02"{/if} href="{$BASE_PATH}download/general/4">{$translation.general.$lang}</a></li>
+					</ul>
+			</div>
+            <!--End Acc Menu-->
+            
+            <div class="sponsored">
+              <div class="logo_sponsored"><a href="http://www.nesoindonesia.or.id/"><img src="{$IMG_PATH}nuffic_neso.gif" alt="sponsored_1" /></a></div>
+              <div class="logo_sponsored"><a href="http://www.mfa.nl/jak-id/"><img src="{$IMG_PATH}kedutaan.gif" alt="sponsored_2" /></a></div>
+            </div>
+          </div>
+          <!--End Left Content-->
+          
+          <!--Start Center Content-->
+          <div class="center_content_field">
+            <div class="text_field">
+                {$content}
+            </div>
+          </div>
+          <!--End Center Content-->
+          
+          <!--Start Right Content-->
+          <div class="right_content_field">
+          
+            <!--start search thesis-->
+            <div class="search_field">
+              <p>{$translation.search.$lang}</p>
+              <p>{$translation.thesis_database.$lang}</p>
+              <form action="{$BASE_PATH}alumni_thesis_databases/" method="POST">
+                <fieldset class="clearfix">
+                  <input type="text" name="search" value="" />
+                  <button type="submit" value="search"></button>
+                </fieldset>
+              </form>
+            </div>
+            <!--end search thesis-->
+            
+            <!--start news-->
+            <div class="news_event">
+              <h3>{$translation.news.$lang}</h3>
+              {$news}
+              <p><a class="arrow" href="{$BASE_PATH}all_news_event/news">{$translation.all_news.$lang}</a></p>
+            </div>
+            <!--end news-->
+            
+            <!--start event-->
+            <div class="news_event">
+              <h3>{$translation.event.$lang}</h3>
+              {$event}
+              <p><a class="arrow" href="{$BASE_PATH}all_news_event/events">{$translation.all_event.$lang}</a></p>
+            </div>
+            <!--end event-->
+            
+          </div>
+          <!--End right Content-->
+        </div>
+        
+        <div class="right_container"></div>
+                
+      </div>
+      <!--END Content Section-->
+{include file="$MAIN_TPL_FOOTER"}

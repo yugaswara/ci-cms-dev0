@@ -1,0 +1,18 @@
+p,td,th,span,div{font-size:11px;line-height:140%;}
+
+.clear{clear:both}
+
+.bannercontent_domain{padding:30px 0 30px 45px;}
+.bannercontent_domain{border:2px solid #ecf0f1;margin:20px 0 10px 0;background:#ffffff url(../../../images/initial/default/background/banner_content.gif) repeat-x center bottom;}
+
+.domaintext{width:auto;height:22px;font:bold 16pt Arial;color:#f36b17;text-align:right;line-height:22px;padding-right:10px;float:left;}
+.bannercontent_btn{float:left;}
+.btnleft,.btnright{width:10px;height:20px;background:url(../../../images/initial/default/button/btn_side.gif) left top no-repeat;float:left;}
+.btnright{background:url(../../../images/initial/default/button/btn_side.gif) right top no-repeat;}
+input.DomainBtn{font-weight:bold;color:#ffffff;height:20px;padding-bottom:3px;background:url(../../../images/initial/default/button/btn_bg.gif) left top repeat-x;border:0;float:left;cursor:pointer;}
+.searchCell{width:auto;height:22px;padding:0 0 0 0;text-align:left;background:none;}
+
+input.loginBtn{border:1px solid #025081 !important;background:#ff9900;) left repeat-x #025081;color:#fff;font:Bold 11px Arial;cursor:pointer;display:inline;width:58px}
+input.srcText{float:left;height:20px;width:320px;border:0px;background:#ffffff;color:#6eb2d8;font:Bold 13px Arial;}
+input.srcText{border-top:1px solid #e3e9ef;border-bottom:1px solid #e3e9ef;border-right:1px solid #e3e9ef;margin-right:5px}
+input.srcBtn{height:20px;width:44px;border:0;padding-top:7px;background: url(../../../images/initial/default/button/go_btn.png);cursor:pointer;}

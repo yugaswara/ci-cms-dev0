@@ -1,0 +1,333 @@
+/* === CSS RESET === */
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+}
+
+body {line-height:1;font-size:1em;}
+
+ol,ul {list-style:none;}
+blockquote,q {quotes:"" "";}
+blockquote:before,blockquote:after,q:before,q:after {content:"";}
+:focus,a:focus {outline:0;}
+ins {text-decoration:none;}
+del {text-decoration:line-through;}
+table {border-collapse:collapse;border-spacing:0;}
+textarea {overflow:auto;}
+button {cursor:pointer;}
+a {text-decoration:none;color:#3d72a8;}
+a:hover {text-decoration:underline;}
+
+/* === A better and smarter way to clear floats === */
+.clearfix:after {
+  content:" ";
+  display:block;
+  height:0;
+  font-size:0;
+  clear:both;
+  visibility:hidden;
+}
+.clearfix {display:inline-block;}
+/* Hide from IE Mac \*/
+.clearfix {display:block;}
+/* End hide from IE Mac */
+* html .clearfix {height:1px;}
+
+.fleft { float:left; }
+.fright { float:right; }
+.L_align{text-align:left;}
+.C_align{text-align:center;}
+.R_align{text-align:right;}
+.J_align{text-align:justify;}
+
+/* === GLOBAL === */
+html,body {height:100%;}
+body {
+  font:normal 10pt Arial, Helvetica, sans-serif;
+  background:url(../../images/initial/bg_F60.gif) left top repeat-x #ffffff;
+}
+.main_structure{
+ width:1000px;
+ height:auto !important;
+ min-height:700px;
+ height:700px;
+ margin: 0 auto;
+}
+.head_container{
+ width:1000px;
+ height:217px;
+ background:#f89717;
+}
+	.head_img_left, .head_img_right, .head_img_banner, .head_content {
+		height:217px;
+	}
+	.head_img_left {
+		width:73px;
+		float:left;
+	}
+	.head_img_right {
+		width:55px;
+		float:right;
+	}
+	.head_img_banner {
+		width:386px;
+		float:right;
+	}
+	.head_content, .head_img_logo, .hmcc_menu {
+		width:486px;
+	}
+  * html .head_content, * html .head_img_logo, * html .hmcc_menu {
+		width:486px;
+    position:relative;
+    zoom:1;
+	}
+	.head_content {
+		float:left;
+	}
+		.head_img_logo {
+			height:153px;
+			margin-bottom:-3px;
+		}
+		.hmcc_menu{
+			height:64px;
+			padding-top:0px;
+			margin-top:0px;
+			background: url(../../images/initial/mmbg.gif) repeat-x;
+		}
+    img.map {
+      display:block;
+      float:left;
+    }
+
+    
+.content_container{
+ width:100%;
+ height:auto !important;
+ min-height:500px;
+ height:500px;
+ background:#ffffff;
+}
+  .left_container{
+   width:30px;
+   height:200px;
+   background:url(../../images/initial/efx_shadow2.gif) left top no-repeat;
+   float:left;
+  }
+  .center_container{
+   width:940px;
+   height:auto !important;
+   min-height:500px;
+   height:500px;
+   background:url(../../images/initial/content_bg.gif) center top repeat-y;
+   float:left;
+   padding-top:10px;
+  }
+    .left_content_field{
+     width:221px;
+     float:left;
+    }
+      .arrowlistmenu{
+       margin:0 auto;
+      }
+      .sponsored{
+       text-align:center;
+       margin-top:50px;
+      }
+        .logo_sponsored{
+         margin-bottom:25px;
+        }
+    .center_content_field{
+     width:497px;
+     float:left;
+		 background:none;
+    }
+      .image_field{
+       width:475px;
+       height:266px;
+       margin:0px auto 10px auto;
+			 border:1px solid #cccccc;
+			 background:none;
+      }
+			.image_field img{
+       width:477px;
+       height:266px;
+      }
+			
+      .text_field{
+       width:477px;
+       position:relative;
+			 margin:0 auto;
+			 padding:0px 15px 0px 0px;
+			 background:none;
+      }
+				.line_container, .contact_content, .links_content{
+					background: url(../../images/initial/arrow.gif) no-repeat left top;
+          margin-left:5px;
+          padding-left:10px;
+				}
+				.line_container, .line_container_blank {
+					padding:0px 0px 10px 10px;
+					margin-bottom:10px;
+				}
+          .line_container img {
+            max-width:462px;
+          }
+          * html .line_container img {
+            width: expression((document.body.clientWidth > 463)? "462px" : "auto");
+          }
+          .line_container ol.L_alpha {
+            list-style-type:lower-alpha;
+            margin-left:18px;
+          }
+          .line_container ol.numlist {
+            list-style-type:decimal;
+            margin-left:18px;
+          }
+					.links_img_container {
+						width:80px;
+						height:60px;
+						margin-top:10px;
+						float:left;
+						border:1px solid #cccccc;
+					}
+					.links_img_container img {
+						width:80px;
+						height:60px;
+					}
+					.links_content {
+						width:365px;
+						float:right;
+						margin-top:10px;
+						padding-left:10px;
+					}
+					.contact_img_container {
+						width:138px;
+						height:156px;
+						margin-top:10px;
+						float:left;
+						border:1px solid #cccccc;
+					}
+					.contact_img_container img {
+						width:138px;
+						height:156px;
+					}
+					.contact_content {
+						width:310px;
+						float:right;
+						margin-top:10px;
+						padding-left:10px;
+					}
+						.form_container {
+							width:477px;
+							height:76px;
+							padding-top:15px;
+							background: url(../../images/initial/bg_login.gif);
+						}
+							.form_content {
+								width:350px;
+								padding:0px 0px 0px 50px;
+								margin:0px auto 1px auto;
+								background:none;
+							}
+								p.form_txt {
+									display:block;
+									width:80px;
+									margin-top:4px;
+									float:left;
+									background:none;
+								}
+								.form_field1 {
+									width:198px;
+									height:16px;
+									float:left;
+									border:1px solid #cccccc;
+								}
+								.login_btn {
+									color:#ffffff;
+									font-weight:bold;
+									font:Bold 12px Arial, Helvetica, sans-serif;
+									width:50px;
+									height:20px;
+									margin-left:80px;
+									border:none;
+									cursor:pointer;
+									background:#f89717;
+								}
+			
+    .right_content_field{
+     width:210px;
+     float:right;
+     padding-left:10px;
+    }
+      .search_field{
+       width:210px;
+       height:73px;
+       background:url(../../images/initial/searchThesis_bg.gif) left top repeat-x;
+       margin-bottom:16px;
+       padding-top:8px
+      }
+      *html .search_field{
+       height:81px;
+      }
+      .news_event{
+       width:210px;
+       background:url(../../images/initial/blue_coner.gif) right top no-repeat;
+       padding-top:2px;
+       margin-bottom:16px;
+       position:relative;
+      }
+   .right_container{
+   width:30px;
+   height:200px;
+   background:url(../../images/initial/efx_shadow2.gif) right top no-repeat;
+   float:left;
+  }
+  
+.foot_container{
+ width:100%;
+ height:120px;
+}
+  .fc_left{
+   width:30px;
+   height:100px;
+   background:url(../../images/initial/efx_shadow3.gif) left bottom no-repeat;
+   float:left;
+  }
+  .fc_center{
+   width:940px;
+   height:110px;
+   float:left;
+   margin-top:-1px;
+  }
+    .fcenter_top{
+     width:100%;
+     height:70px;
+     background:url(../../images/initial/content_bg.gif) center top repeat-y;
+    }
+    .fcenter_btm{
+     width:100%;
+     height:45px;
+     background:url(../../images/initial/footer_bg.gif) left center repeat-x;
+     text-align:center;
+    }
+  .fc_right{
+   width:30px;
+   height:100px;
+   background:url(../../images/initial/efx_shadow3.gif) right bottom no-repeat;
+   float:left;
+  }
+
+
+

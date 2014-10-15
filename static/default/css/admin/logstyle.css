@@ -1,0 +1,80 @@
+/*css document*/
+*{margin:0 auto;}
+.clear{clear:both;}
+*html div,img{behavior:url(style/iepngfix.htc);}
+
+body{
+font:normal 11px arial;
+color:#000000;
+}
+
+.left{float:left;}
+.right{float:right;}
+.text1{font:bold 11px tahoma;color:#000000;}
+.text2{font:bold 11px verdana;color:#000000;}
+
+.middle_field{
+width:100%;
+height:400px;
+top:50%;
+margin-top:-200px;
+position:absolute;
+background:url(../../../bg_login.gif) top left repeat-x;
+}
+.main_field{
+width:70%;
+height:400px;
+*width:69%;
+}
+
+.field{
+padding-top:150px;
+}
+
+.main_form{
+width:100%;
+height:30px;
+}
+
+.label{
+text-align:right;
+width:68%;
+padding:4px 0px;
+*padding:5px 0px;
+}
+
+.input{
+width:32%;
+}
+
+.image_field{
+width:30%;
+height:400px;
+}
+
+.help_area{width:226px;height:100px;}
+a.help{
+font:bold 11px tahoma;
+color:#fff;
+text-decoration:none;
+*line-height:22px;
+}
+a:hover.help{color:#ccc;}
+
+.btlogin{
+width:55px;
+height:20px;
+background:url(../../../btlogin.gif) top left;}
+
+.bottom_field{
+width:100%;
+height:60px;
+text-align:center;
+color:#999;
+position:absolute;
+bottom:0px;
+}
+a.footer{text-decoration:none;color:#999;}
+a:hover.footer{color:#000;}
+
+.clear{clear:both;}

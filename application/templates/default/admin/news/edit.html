@@ -1,0 +1,72 @@
+{include file="$MAIN_TPL_HEADER"}
+<div class="MiddleContainer">
+		<div class="ContentField left">
+		{$middle_content_menu}
+		<div class="clear"></div>
+			<div class="BlueLine">
+				<div class="TextBar"> {$mode} PAGE</div>
+                <a class="menu5" href="{$ADMIN_PATH}news/index/{$page_num}"><div class="BlueButton right">Back to List</div></a>
+			</div>
+                <form name="article" id="form" method="POST" action="{$ADMIN_PATH}news/{$target}">
+<table width="100%" border="0">
+	<tr>
+		<td></td><td></td><td><input type="hidden" name="category" value="news"></td>
+	<tr>
+	<tr>
+		<td>Date</td><td>:</td>
+		<td>
+			<input type="text" name="date" class="required" id="date" value="{$date}">
+		</td>
+	<tr>
+	</table>
+	
+<div id="tabs">	
+
+	<ul>
+		<li><a href="#tabs-1">Indonesia</a></li>
+		<li><a href="#tabs-2">English</a></li>
+	</ul>
+
+	<div id="tabs-1">
+
+	<table width="100%" border="0">
+	<tr>
+		<td>Title</td><td>:</td>
+		<td><input type="text" name="id_title" class="required" value="{$id_title}" style="width:250px"></td>
+	</tr>
+	<tr><td>Content</td><td>:</td>
+		<td><textarea name="id_content" id="id_content" rows="20" cols="70">{$list.id_content}</textarea>
+	</td></tr>
+	</table>
+	
+	</div>
+	<div id="tabs-2">
+	
+	<table width="100%" border="0">
+	<tr>
+		<td>Title</td><td>:</td>
+		<td><input type="text" name="en_title" value="{$en_title}" style="width:250px"></td>
+	</tr>
+	<tr><td>Content</td><td>:</td>
+		<td><textarea name="en_content" id="en_content" rows="20" cols="70">{$list.en_content}</textarea>
+	</td></tr>
+	</table>
+	</div>
+</div>	
+	
+	<table width="100%" border="0">
+	<tr><td>&nbsp;</td><td>&nbsp;</td>
+		<td><input type="hidden" name="news_event_id" value="{$list.news_event_id}">
+			<input type="hidden" name="page_num" id="page_num" value="{$page_num}">
+			</td>
+	</tr>
+</table>
+                <div class="BlueLineBtm">
+				<input class="BlueButton Left" type="submit" name="save" value="Save">
+				</div>
+				</form>
+		</div>
+	{include file="$RIGHT_SIDEBAR"}
+	</div>
+	<div class="clear"></div>
+{include file="$MAIN_TPL_FOOTER"}

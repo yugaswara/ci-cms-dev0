@@ -1,0 +1,66 @@
+{include file="$MAIN_TPL_HEADER"}
+<div class="MiddleContainer">
+		<div class="ContentField left">
+		{$middle_content_menu}
+		<div class="clear"></div>
+			<div class="BlueLine">
+				<div class="TextBar">VIEW PAGE</div>
+                <a class="menu5" href="{$ADMIN_PATH}download_center/index/{$page_num}"><div class="BlueButton right">Back to List</div></a>
+			</div>
+            <table width="100%">
+                <tr>
+                    <td>File</td>
+                    <td>:</td>
+                    <td><a href="../../../../{$list.file}" target="_blank">[download file]</a></td>
+                </tr>
+				<tr>
+					<td colspan="3">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="3"><h2>English</h2></td>
+				</tr>
+				<tr>
+					<td colspan="3">&nbsp;</td>
+				</tr>
+                <tr>
+                    <td>Title</td>
+                    <td>:</td>
+                    <td>{$list.en_title}</td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>:</td>
+                    <td>{$list.en_description}</td>
+                </tr>
+				<tr>
+					<td colspan="3">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="3"><h2>Dutch</h2></td>
+				</tr>
+				<tr>
+					<td colspan="3">&nbsp;</td>
+				</tr>
+                <tr>
+                    <td>Title</td>
+                    <td>:</td>
+                    <td>{$list.id_title}</td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>:</td>
+                    <td>{$list.id_description}</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td id="error" style="color:red;list-style:none"></td>
+                </tr>
+            </table>
+            <div class="BlueLineBtm">
+			</div>
+		</div>
+	{include file="$RIGHT_SIDEBAR"}
+	</div>
+	<div class="clear"></div>
+{include file="$MAIN_TPL_FOOTER"}

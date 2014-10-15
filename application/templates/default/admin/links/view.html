@@ -1,0 +1,28 @@
+{include file="$MAIN_TPL_HEADER"}
+<div class="MiddleContainer">
+		<div class="ContentField left">
+		{$middle_content_menu}
+		<div class="clear"></div>
+			<div class="BlueLine">
+				<div class="TextBar">VIEW PAGE</div>
+                <a class="menu5" href="{$ADMIN_PATH}links/index/{$page_num}"><div class="BlueButton right">Back to List</div></a>
+			</div>
+            <table width="100%">
+                <tr>
+                    <td>Link Name</td>
+                    <td>:</td>
+                    <td>{$list.link_name}</td>
+                </tr>
+                <tr>
+                    <td>Link Address</td>
+                    <td>:</td>
+                    <td>{$list.link_address}</td>
+                </tr>
+            </table>
+            <div class="BlueLineBtm">
+			</div>
+		</div>
+	{include file="$RIGHT_SIDEBAR"}
+	</div>
+	<div class="clear"></div>
+{include file="$MAIN_TPL_FOOTER"}

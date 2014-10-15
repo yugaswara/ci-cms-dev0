@@ -1,0 +1,81 @@
+{include file="$MAIN_TPL_HEADER"}
+<div class="MiddleContainer">
+		<div class="ContentField left">
+			<div class="AllContentField">
+				<div class="LField left"></div>
+				<div class="RField left">
+					
+					<div class="MainField">
+						<div class="TitleMenu">Content</div>
+						<div class="ListMenu"><a class="menu3" href="{$_DOC_ROOT_PATH}?page=content&submenu=static_content">Static Content</a></div>
+						<div class="ListMenu"><a class="menu3" href="{$_DOC_ROOT_PATH}?page=content&submenu=news">News</a></div>
+						<!--
+						<div class="ListMenu"><a class="menu3" href="#">Article</a></div>
+						-->
+					</div>
+					<div class="MainField">
+						<div class="TitleMenu">Product</div>
+						<div class="ListMenu"><a class="menu3" href="{$_DOC_ROOT_PATH}?page=content&submenu=product">Product</a></div>
+						<div class="ListMenu"><a class="menu3" href="{$_DOC_ROOT_PATH}?page=content&submenu=services">Service</a></div>
+					</div>
+					<!--<div class="MainField">
+						<div class="TitleMenu">Costumer</div>
+						<div class="ListMenu"><a class="menu3" href="#">Contact</a></div>
+						<div class="ListMenu"><a class="menu3" href="#">Costumer Info</a></div>
+						<div class="ListMenu"><a class="menu3" href="#">Enrollment</a></div>
+					</div>-->
+					<!--<div class="MainField">
+						<div class="TitleMenu">Gallery</div>
+						<div class="ListMenu"><a class="menu3" href="#">Movies</a></div>
+						<div class="ListMenu"><a class="menu3" href="#">Images</a></div>
+					</div>-->
+					<!--<div class="MainField">
+						<div class="TitleMenu">Newsletter</div>
+						<div class="ListMenu"><a class="menu3" href="#">Email</a></div>
+					</div>-->
+					<div class="MainField">
+						<div class="TitleMenu">Preference</div>
+						<div class="ListMenu"><a class="menu3" href="#">Multi Language</a></div>
+						<!--<div class="ListMenu"><a class="menu3" href="{$_DOC_ROOT_PATH}?page=content&submenu=favicon">Favicon</a></div>
+						<div class="ListMenu"><a class="menu3" href="{$_DOC_ROOT_PATH}?page=content&submenu=themes">Themes/Skin</a></div>
+						<div class="ListMenu"><a class="menu3" href="#">Contact</a></div>-->
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+            {if $SUBMENU!='' AND $SUBMENU=='product'}
+			<div class="BlueLine">
+              <div style="padding-top:5px;vertical-align:middle;padding-left:25px;">
+				<a class="menu5" href="{$_DOC_ROOT_PATH}?page=content&submenu=product&submenu2=shared_hosting"><div class="left">Shared Hosting&nbsp;|&nbsp;</div></a>
+				<a class="menu5" href="{$_DOC_ROOT_PATH}?page=content&submenu=product&submenu2=reseller_hosting"><div class="left">Reseller Hosting&nbsp;|&nbsp;</div></a>
+				<a class="menu5" href="{$_DOC_ROOT_PATH}?page=content&submenu=product&submenu2=dedicated_server"><div class="left">Dedicated Server&nbsp;|&nbsp;</div></a>
+				<a class="menu5" href="{$_DOC_ROOT_PATH}?page=content&submenu=product&submenu2=colocation"><div class="left">Colocation&nbsp;|&nbsp;</div></a>
+   				<a class="menu5" href="{$_DOC_ROOT_PATH}?page=content&submenu=product&submenu2=customize_server"><div class="left">Customize Server&nbsp;|&nbsp;</div></a>
+				<a class="menu5" href="{$_DOC_ROOT_PATH}?page=content&submenu=product&submenu2=domains"><div class="left">Domains&nbsp;|&nbsp;</div></a>
+                <a class="menu5" href="{$_DOC_ROOT_PATH}?page=content&submenu=product&submenu2=vps"><div class="left">VPS</div></a>
+              </div>
+            </div>
+            {/if}
+            {if $LIST_SUBMENU2!=''}
+			<div class="BlueLine">
+              <div style="padding-top:5px;vertical-align:middle;padding-left:25px;">
+				{$LIST_SUBMENU2}
+              </div>
+            </div>
+            {/if}
+            <div class="BlueLine">
+				<div class="TextBar">{$TITLE_LIST}</div>
+				<a class="menu5" href="{$_DOC_ROOT_PATH}?page=content&submenu={$SUBMENU}"><div class="BlueButton right">List</div></a>
+				<a class="menu5" href="{$_DOC_ROOT_PATH}?page=content&submenu={$SUBMENU}&action=add"><div class="BlueButton right">Add</div></a>
+			</div>
+			{$LISTING}
+			<div class="BlueLineBtm">
+                {$BTNSELECTOR}{$PAGING}
+			</div>
+		</div>
+		{include file="$RIGHT_SIDEBAR"}
+	</div>
+	<div class="clear"></div>
+{include file="$MAIN_TPL_FOOTER"}

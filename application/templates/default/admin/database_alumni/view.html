@@ -1,0 +1,113 @@
+{include file="$MAIN_TPL_HEADER"}
+<div class="MiddleContainer">
+		<div class="ContentField left">
+		{$middle_content_menu}
+		<div class="clear"></div>
+			<div class="BlueLine">
+				<div class="TextBar">VIEW PAGE</div>
+                <a class="menu5" href="{$ADMIN_PATH}database_alumni/index/{$page_num}"><div class="BlueButton right">Back to List</div></a>
+			</div>
+            <table width="100%">
+                <tr>
+                    <td>Name</td>
+                    <td>:</td>
+                    <td>{$list.name}</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>:</td>
+                    <td>{$list.gender}</td>
+                </tr>
+                <tr>
+                    <td>Email Address</td>
+                    <td>:</td>
+                    <td>{$list.email_address}</td>
+                </tr>
+                <tr>
+                    <td>Batch</td>
+                    <td>:</td>
+                    <td>{$list.batch}</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>:</td>
+                    <td>{$list.dob}</td>
+                </tr>
+                <tr>
+                    <td>Scholarship</td>
+                    <td>:</td>
+                    <td>{$list.link_address}</td>
+                </tr>
+                <tr>
+                    <td>Univ</td>
+                    <td>:</td>
+                    <td>{$list.univ}</td>
+                </tr>
+                <tr>
+                    <td>Study Program</td>
+                    <td>:</td>
+                    <td>{$list.study_program}</td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td>:</td>
+                    <td>{$list.mobile}</td>
+                </tr>
+                <tr>
+                    <td>Home Address</td>
+                    <td>:</td>
+                    <td>{$list.home_address}</td>
+                </tr> 
+                <tr>
+                    <td>Home City</td>
+                    <td>:</td>
+                    <td>{$list.home_city}</td>
+                </tr>
+                <tr>
+                    <td>Home Phone</td>
+                    <td>:</td>
+                    <td>{$list.home_phone}</td>
+                </tr>
+                <tr>
+                    <td>Office Address</td>
+                    <td>:</td>
+                    <td>{$list.office_address}</td>
+                </tr>
+                <tr>
+                    <td>Office City</td>
+                    <td>:</td>
+                    <td>{$list.office_city}</td>
+                </tr>
+                <tr>
+                    <td>Office Province</td>
+                    <td>:</td>
+                    <td>{$list.office_provinsi}</td>
+                </tr>
+                <tr>
+                    <td>Office Phone</td>
+                    <td>:</td>
+                    <td>{$list.office_phone}</td>
+                </tr>
+                <tr>
+                    <td>Office Fax</td>
+                    <td>:</td>
+                    <td>{$list.office_fax}</td>
+                </tr>
+                <tr>
+                    <td>Thesis Title</td>
+                    <td>:</td>
+                    <td>{$list.title}</td>
+                </tr>
+                <tr>
+                    <td>Thesis Content</td>
+                    <td>:</td>
+                    <td>{$list.thesis_content}</td>
+                </tr>
+            </table>
+            <div class="BlueLineBtm">
+			</div>
+		</div>
+	{include file="$RIGHT_SIDEBAR"}
+	</div>
+	<div class="clear"></div>
+{include file="$MAIN_TPL_FOOTER"}

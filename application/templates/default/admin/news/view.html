@@ -1,0 +1,73 @@
+{include file="$MAIN_TPL_HEADER"}
+<div class="MiddleContainer">
+		<div class="ContentField left">
+		{$middle_content_menu}
+		<div class="clear"></div>
+			<div class="BlueLine">
+				<div class="TextBar">VIEW PAGE</div>
+                <a class="menu5" href="{$ADMIN_PATH}news/index/{$page_num}"><div class="BlueButton right">Back to List</div></a>
+			</div>
+            <table width="100%">
+                <tr>
+                    <td>Date</td>
+                    <td>:</td>
+                    <td>{$date}</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>:</td>
+                    <td>{if $list.active == 0}Not Active{else}Active{/if}</td>
+                </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><h2>English</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                    </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>:</td>
+                    <td>{$list.en_title}</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+
+                    <td>:</td>
+                    <td>{$list.en_content}</td>
+                </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><h2>Dutch</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                    </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>:</td>
+                    <td>{$list.id_title}</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+
+                    <td>:</td>
+                    <td>{$list.id_content}</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td id="error" style="color:red;list-style:none"></td>
+                </tr>
+            </table>
+            <div class="BlueLineBtm">
+			</div>
+		</div>
+	{include file="$RIGHT_SIDEBAR"}
+	</div>
+	<div class="clear"></div>
+{include file="$MAIN_TPL_FOOTER"}
